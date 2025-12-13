@@ -1,0 +1,289 @@
+
+.site-header {
+    height: 146px
+}
+
+.page-id-28711 .entry-title {
+    display: none;
+}
+
+.page-id-11527 .entry-title {
+    display: none;
+}
+
+.page-id-25369 .entry-title {
+    display: none;
+}
+
+
+.site-header {
+    z background-size:100% 245%;
+    background-repeat: no-repeat;
+}
+
+.site-header-cart {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.site-header-cart {
+    background-color: rgba(255, 255, 255,0.5);
+    height: 20px;
+    border-radius: 4px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    padding-left: 50px;
+}
+
+.site-search {
+    display: none;
+}
+
+.custom-logo {
+    display: none !important;
+}
+
+.main-navigation .menu {
+    font-weight: 500;
+    font-family: helvetica;
+    font-size: 14px;
+}
+
+.archive .main-navigation {
+    display: inline-block;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin: 0px auto;
+    padding-left: 300px;
+    transform: translateY(-25%);
+}
+
+
+.category-67 .main-navigation {
+    display: inline-block;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin: 0px auto;
+    padding-left: 300px;
+    transform: translateY(-25%);
+}
+
+.menu-button a {
+    margin: 0px;
+    color: black;
+}
+
+.page .menu-button a {
+    font-family: helvetica;
+    font-weight: 500;
+}
+
+.page-id-11527 .menu-button {
+    margin: -6.5px;
+    color: black;
+    transform: translateY(48%);
+    font-weight: 500;
+    font-family: helvetica;
+}
+
+.main-navigation {
+    padding-left: 31%;
+}
+
+.page-id-25369 .main-navigation {
+    padding-left: 25%;
+}
+
+.nav-menu li a:hover {
+    color: #fff !important;
+}
+
+.menu :hover {
+    color: #fff !important;
+}
+
+
+.sidebar {
+    background-color: rgba(51, 51, 51,0);
+    color: white;
+    padding: 0px;
+    width: 12%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    transition: background-color 0.3s;
+    border-top-right-radius: 10px;
+}
+
+.newsidebar {
+    background-color: rgba(51, 51, 51,0);
+    color: white;
+    padding: 0px;
+    width: 10%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    justify-content: right;
+    display: none;
+    transition: background-color 0.3s;
+    border-top-right-radius: 10px;
+}
+
+
+
+
+.main-content {
+    padding-right: 0;
+    transition: padding-right 0.3s;
+    padding-top: 5%;
+}
+
+.main-content2 {
+    padding: 20px;
+    padding-right: 0;
+    transition: padding-right 0.3s;
+    padding-left: 10%;
+    padding-top: 5%;
+}
+
+.hidden-text {
+    display: none;
+}
+
+header {
+    background-color: rgba(51, 51, 51,0.75);
+    height: 10%;
+    color: white;
+    padding: 0px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transition: background-color 0.3s;
+    border-bottom-left-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navi {
+    padding-right: 5%;
+}
+
+
+nav ul {
+    align-content: center;
+    display: flex;
+}
+
+nav .ul2 {
+    color: #ffffff;
+}
+
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+    nav a:hover {
+        color: black;
+    }
+
+
+section {
+    padding: 20px;
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    display: inline;
+}
+
+
+.dropdown-button {
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(51, 51, 51, 1);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+
+    .dropdown-content a {
+        color: #333;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+menu {
+    display: flex;
+    align-items: center;
+}
+
+
+    menu li {
+        list-style: none;
+        margin-right: 20px;
+    }
+
+
+
+    footer a {
+        color: white;
+        text-decoration: none;
+        margin: 0 10px;
+    }
+
+
+        footer a:hover {
+            color: black;
+        }
+
+
+
+html {
+    scroll-behavior: smooth;
+}

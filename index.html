@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Suite Diffusion</title>
+    <link rel="icon" href="https://suitediffusion.com/wp-content/uploads/2023/09/image_txt2img.png" type="image/png">
+    
+    <style>
+        
+        body {
+            background-color: rgba(229, 229, 229, 1);
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: row;
+        }
+
+        
+        .sidebar {
+            background-color: rgba(51, 51, 51,0);
+            color: white;
+            padding: 0px;
+            width: 12%;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            
+            transition: background-color 0.3s; 
+            border-top-right-radius: 10px; 
+        }
+        .newsidebar {
+            background-color: rgba(51, 51, 51,0);
+            color: white;
+            padding: 0px;
+            width: 10%;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            justify-content: right;
+            display: none;
+            
+            transition: background-color 0.3s; 
+            border-top-right-radius: 10px; 
+            
+        }
+
+        
+
+        
+        .main-content {
+            
+            
+            padding-right: 0; 
+            transition: padding-right 0.3s; 
+            padding-top: 5%; 
+
+        }
+
+        .main-content2 {
+            
+            padding: 20px;
+            padding-right: 0; 
+            transition: padding-right 0.3s; 
+            padding-left: 10%; 
+            padding-top: 5%; 
+
+        }
+
+        .hidden-text {
+                 display: none;
+        }
+
+        header {
+        background-color: rgba(51, 51, 51,0.75);
+        height: 10%;
+        color: white;
+        padding: 0px;
+        position: fixed; 
+        width: 100%; 
+        top: 0; 
+        left: 0;
+        transition: background-color 0.3s; 
+        border-bottom-left-radius: 10px; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+
+        .navi{
+            padding-right: 5%;
+        }
+
+        
+        nav ul {
+             
+            align-content: center;
+            display: flex;
+
+        }
+        nav .ul2 {
+             
+             color: #ffffff;
+ 
+         }
+        
+
+        nav li {
+            display: inline;
+            
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: black; 
+        }
+
+        
+        section {
+            padding: 20px;
+        }
+
+        
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            display: inline;
+        }
+
+       
+        .dropdown-button {
+            background-color: rgba(255, 255, 255, 1);
+            color: rgba(51, 51, 51, 1);
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+       
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        
+        .dropdown-content a {
+            color: #333;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+       
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        menu {
+            display: flex;
+            align-items: center;
+        }
+
+        
+        menu li {
+            list-style: none;
+            margin-right: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        
+        footer a:hover {
+            color:black;
+        }
+        .video-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 50vh;
+    }
+
+       
+    </style>
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+
+    </div>
+    <!-- New Sidebar -->
+    <div class="newsidebar">
+        <img src="/images/suite_diffusion_logo.png" alt="Suite Diffusion Logo" style=" margin-left: 5 auto; width: 80%; height: auto">
+        <img src="/images/image_txt2img.png" alt="Suite Diffusion Logo" style=" margin-left: 5 auto; width: 80%; height: auto">
+
+    </div>
+
+    <!--Header-->
+
+    <header>
+        <!-- Navi-->
+        <div class="navi">
+            <menu>
+
+
+                
+                <div class="dropdown">
+                    <button class="dropdown-button">Menu</button>
+                    <div class="dropdown-content">
+                        <a href="/">Home</a>
+                        <a href="/app/">Download</a>
+                        <a href="/support/">Support</a>
+                    </div>
+                </div>
+            </menu>
+        </div>
+
+
+
+    </header>
+
+
+    <!-- Main Content -->
+    <div>
+        <div class="main-content">
+
+
+
+
+
+            <section id="section1">
+
+                <h2><span class="hidden-text">Suite Diffusion</span></h2>
+
+                <img src="/images/suite_diffusion_logo.png" alt="Suite Diffusion Logo"
+                     style="display: block; margin: 0 auto; width: 50%; height: auto">
+
+                <img src="/images/image_txt2img.png" alt="Suite Diffusion Logo"
+                     style="display: block; margin: 0 auto; width: 15%; height: auto">
+
+
+            </section>
+
+        </div>
+
+
+
+
+        <!-- Body -->
+        <div class="main-content2">
+
+            <div class="quote">
+                <h3 style="text-align: center;"><i>Unlock Creativity and Innovation with SuiteDiffusion: AI-Powered Multi-Modal Gateway!</i></h3>
+            </div>
+
+
+
+
+            <section id="section2">
+                <h2 style="text-align: center;">Suite Diffusion - AI Multi-Modal Interface</h2>
+                <p>Suite Diffusion is a cutting-edge AI-driven graphical user interface (GUI) that seamlessly integrates a suite of powerful tools for multi-modal data transformation. This innovative software empowers users to effortlessly convert and manipulate various forms of data, bridging the gap between different modalities such as text, images, speech, and AI voice generation.</p>
+
+                <h2 style="text-align: center;">Current Features</h2>
+
+                <h4>Text to Image Conversion:</h4>
+                <p>Suite Diffusion allows users to transform textual descriptions into vivid and expressive images. Whether you're an artist, a content creator, or a storyteller, this feature enables you to bring words to life through visual representation.</p>
+
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+
+                <h2 style="text-align: center;">Coming Soon</h2>
+
+                <h4>Image to Image Transformation:</h4>
+                <p>With advanced neural network models, Suite Diffusion can generate new images based on existing ones. This feature is perfect for artists, designers, and anyone looking to create variations of images or generate fresh creative content.</p>
+
+                <h4>Text to Speech Synthesis:</h4>
+                <p>Transform written words into natural-sounding human speech. Suite Diffusion offers high-quality text-to-speech synthesis, making it ideal for audiobook production, accessibility features, or any application where spoken content is required.</p>
+
+                <h4>Speech to Text Conversion:</h4>
+                <p>Convert spoken language into accurate written text with exceptional speed and accuracy. This feature is invaluable for transcribing interviews, lectures, podcasts, and any situation where you need to convert spoken words into text.</p>
+
+                <h4>AI Voice Training:</h4>
+                <p>Train and customize AI voices to suit your specific needs. Suite Diffusion offers a user-friendly interface for voice data collection and training, making it a valuable tool for developers, voice actors, and anyone interested in creating unique AI-generated voices.</p>
+
+                <h4>User-Friendly Interface:</h4>
+                <p>Suite Diffusion features an intuitive and user-friendly interface designed to cater to users of all levels of technical expertise. Its drag-and-drop functionality, clear navigation, and helpful tooltips ensure a smooth and hassle-free experience.</p>
+
+                <h4>Advanced AI Algorithms:</h4>
+                <p>Powered by state-of-the-art AI algorithms, Suite Diffusion delivers exceptional performance and results. It leverages deep learning, neural networks, and natural language processing to provide accurate and lifelike transformations.</p>
+
+                <h4>Customization and Export:</h4>
+                <p>Users can customize the output of each transformation and export their results in various formats, ensuring compatibility with a wide range of applications and projects.</p>
+
+                <h3>Applications:</h3>
+                <p>Suite Diffusion finds utility across diverse fields, including art and design, content creation, accessibility, data analysis, and voice technology development. Whether you're a creative professional, researcher, or developer, this versatile software enhances your capabilities and boosts productivity.</p>
+
+                <p>Suite Diffusion is the all-in-one solution for multi-modal data manipulation, bringing the power of AI to your fingertips. Unlock new possibilities and streamline your workflows with this comprehensive and user-friendly AI GUI.</p>
+
+                <p>Experience the future of data transformation and creation with Suite Diffusion today!</p>
+
+
+            </section>
+
+          
+
+
+            <footer>
+                <p> Suite Diffusion &copy; 2023 </p>
+                <nav2>
+                    <div class="ul2">
+                        <a href="/privacy-policy/">Privacy Policy</a>
+                        <a href="/terms-of-use/">Terms of Use</a>
+                    </div>
+                </nav2>
+            </footer>
+
+        </div>
+        <script>
+
+            const header = document.querySelector('header');
+            const sidebar = document.querySelector('.sidebar');
+            const mainContent = document.querySelector('.main-content');
+            const mainContent2 = document.querySelector('.main-content2');
+            const newsidebar = document.querySelector('.newsidebar');
+            const navicontent = document.querySelector('.navi')
+            const navLinks = document.querySelectorAll('nav a');
+
+
+
+
+            let isSidebarHidden = false;
+            let isImgNewsidebarHidden = true;
+
+
+
+
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 25) {
+                    header.style.backgroundColor = 'rgba(200, 200, 200,1)';
+                    header.style.color = 'black';
+                    header.style.left = '12%';
+                    navicontent.style.paddingRight = '29%';
+                    sidebar.style.display = 'none';
+                    newsidebar.style.display = 'block';
+                    newsidebar.style.width = '12%';
+                    isSidebarHidden = true;
+                    mainContent.style.paddingRight = '100%';
+                    mainContent.style.paddingLeft = '0%';
+                    mainContent.style.paddingTop = '12%';
+
+
+
+
+
+                    mainContent2.style.paddingTop = '5%';
+
+
+                    navLinks.forEach(link => {
+                        link.style.color = 'black';
+
+                        link.addEventListener('mouseover', () => {
+                            link.style.color = 'white';
+                        }
+                        );
+
+
+                        link.addEventListener('mouseout', () => {
+                            link.style.color = 'black';
+                        }
+
+
+                        );
+                    });
+
+
+                } else {
+                    header.style.backgroundColor = 'rgba(51, 51, 51,0.75)';
+                    header.style.color = 'white';
+                    header.style.left = '0';
+                    navicontent.style.paddingRight = '5%';
+
+                    sidebar.style.display = 'block';
+                    sidebar.style.width = '12%';
+                    newsidebar.style.display = 'none';
+                    newsidebar.style.width = '0';
+                    isSidebarHidden = false;
+                    mainContent.style.paddingRight = '0';
+                    mainContent.style.paddingLeft = '0%';
+                    mainContent.style.paddingTop = '5%';
+
+                    mainContent2.style.paddingTop = '5%';
+
+
+
+                    navLinks.forEach(link => {
+                        link.style.color = 'white';
+
+                        link.addEventListener('mouseover', () => {
+                            link.style.color = 'black';
+                        }
+                        );
+
+
+                        link.addEventListener('mouseout', () => {
+                            link.style.color = 'white';
+                        }
+
+
+                        );
+                    });
+                }
+            });
+        </script>
+</body>
+</html>
+
+
+
+

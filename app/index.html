@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>App</title>
+    <link rel="icon" href="/images/image_txt2img.png" type="image/png">
+
+    <style>
+       
+    </style>
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+
+    </div>
+    <!-- New Sidebar -->
+    <div class="newsidebar">
+        <img src="/images/suite_diffusion_logo.png" alt="Suite Diffusion Logo" style=" margin-left: 5 auto; width: 80%; height: auto">
+        <img src="/images/image_txt2img.png" alt="Suite Diffusion Logo" style=" margin-left: 5 auto; width: 80%; height: auto">
+
+    </div>
+
+    <!--Header-->
+
+    <header>
+        <!-- Navi-->
+        <div class="navi">
+            <menu>
+
+
+                <div class="dropdown">
+                    <button class="dropdown-button">Menu</button>
+                    <div class="dropdown-content">
+                        <a href="/">Home</a>
+                        <a href="/app/">Download</a>
+                        <a href="/support/">Support</a>
+                    </div>
+                </div>
+            </menu>
+        </div>
+
+
+
+    </header>
+
+
+    <!-- Main Content -->
+
+    <div class="main-content">
+
+
+
+
+
+        <section id="section1">
+
+            <h2><span class="hidden-text">Suite Diffusion</span></h2>
+
+            <img src="/images/suite_diffusion_logo.png" alt="Suite Diffusion Logo"
+                 style="display: block; margin: 0 auto; width: 50%; height: auto">
+
+            <img src="/images/image_txt2img.png" alt="Suite Diffusion Logo"
+                 style="display: block; margin: 0 auto; width: 15%; height: auto">
+
+
+        </section>
+
+    </div>
+
+
+
+
+    <!-- Body -->
+    <div class="main-content2" style="padding-top:25%; text-align: center;">
+        <heading >        <img src="/images/suite_diffusion_logo.png" alt="Suite Diffusion Logo" width="500" height="300">
+        </heading>
+        <div class="quote">
+            <h3 style="text-align: center;"><i>Unlock Creativity and Innovation with SuiteDiffusion: AI-Powered Multi-Modal Gateway!</i></h3>
+        </div>
+
+
+   
+        <section style="padding-top:7%; text-align: center;" id="section1">
+            <h2 style="text-align: center;">Suite Diffusion on Google Play</h2>
+
+            <div class="play-links">
+                <a href="https://play.google.com/store/apps/details?id=com.workprintstudios.suitediffusion"
+                   target="_blank" onclick="event.stopPropagation();">
+                    <img alt="Get it on Google Play"
+                         src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" width="300" />
+                </a>
+            </div>
+
+
+        </section>
+
+        
+    </div>
+    <script>
+
+        const header = document.querySelector('header');
+        const sidebar = document.querySelector('.sidebar');
+        const mainContent = document.querySelector('.main-content');
+        const mainContent2 = document.querySelector('.main-content2');
+        const newsidebar = document.querySelector('.newsidebar');
+        const navicontent = document.querySelector('.navi')
+        const navLinks = document.querySelectorAll('nav a');
+
+
+
+
+        let isSidebarHidden = false;
+        let isImgNewsidebarHidden = true;
+
+
+
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 25) {
+                header.style.backgroundColor = 'rgba(200, 200, 200,1)';
+                header.style.color = 'black';
+                header.style.left = '12%';
+                navicontent.style.paddingRight = '29%';
+                sidebar.style.display = 'none';
+                newsidebar.style.display = 'block';
+                newsidebar.style.width = '12%';
+                isSidebarHidden = true;
+                mainContent.style.paddingRight = '100%';
+                mainContent.style.paddingLeft = '0%';
+                mainContent.style.paddingTop = '12%';
+
+
+
+
+
+                mainContent2.style.paddingTop = '5%';
+
+
+                navLinks.forEach(link => {
+                    link.style.color = 'black';
+
+                    link.addEventListener('mouseover', () => {
+                        link.style.color = 'white';
+                    }
+                    );
+
+
+                    link.addEventListener('mouseout', () => {
+                        link.style.color = 'black';
+                    }
+
+
+                    );
+                });
+
+
+            } else {
+                header.style.backgroundColor = 'rgba(51, 51, 51,0.75)';
+                header.style.color = 'white';
+                header.style.left = '0';
+                navicontent.style.paddingRight = '5%';
+
+                sidebar.style.display = 'block';
+                sidebar.style.width = '12%';
+                newsidebar.style.display = 'none';
+                newsidebar.style.width = '0';
+                isSidebarHidden = false;
+                mainContent.style.paddingRight = '0';
+                mainContent.style.paddingLeft = '0%';
+                mainContent.style.paddingTop = '5%';
+
+                mainContent2.style.paddingTop = '5%';
+
+
+
+                navLinks.forEach(link => {
+                    link.style.color = 'white';
+
+                    link.addEventListener('mouseover', () => {
+                        link.style.color = 'black';
+                    }
+                    );
+
+
+                    link.addEventListener('mouseout', () => {
+                        link.style.color = 'white';
+                    }
+
+
+                    );
+                });
+            }
+        });
+    </script>
+    <footer>
+        <p> Suite Diffusion &copy; 2023 </p>
+        <nav2>
+            <div class="ul2">
+                <a href="/privacy-policy/">Privacy Policy</a>
+                <a href="/terms-of-use/">Terms of Use</a>
+            </div>
+        </nav2>
+    </footer>
+</body>
+</html>
+
+
+
+
